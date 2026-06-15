@@ -1,0 +1,1299 @@
+{
+  "suite": "bakeoff-01",
+  "machine_id": "macbook-pro-mac16-5-apple-m4-max-16c-128gb",
+  "ranking": [
+    "qwen3-coder-next:latest",
+    "qwen3.6:35b-a3b",
+    "gemma4:31b-it-q8_0",
+    "gpt-oss:120b",
+    "gemma4:31b",
+    "gemma4:26b",
+    "glm-4.7-flash",
+    "qwen3-coder:30b",
+    "gpt-oss:20b",
+    "gemma4:e4b",
+    "nemotron-3-nano:4b"
+  ],
+  "models": {
+    "qwen3-coder-next:latest": {
+      "overall": 0.9888888888888889,
+      "pooled": [
+        38,
+        39
+      ],
+      "pooled_ci": [
+        0.8681871352137286,
+        0.9954594139347627
+      ],
+      "upm": 0.18307371125742733,
+      "median_tokens_per_sec": 20.36,
+      "timeouts": 0,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.8888888888888888,
+        "bug-fix": 1.0,
+        "terminal-ops": 1.0,
+        "feature-add": 1.0,
+        "terse-prompt": 1.0,
+        "refactor": 1.0,
+        "test-writing": 1.0,
+        "multi-file": 1.0,
+        "long-context": 1.0
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        }
+      }
+    },
+    "qwen3.6:35b-a3b": {
+      "overall": 0.9555555555555556,
+      "pooled": [
+        37,
+        39
+      ],
+      "pooled_ci": [
+        0.8311406095436208,
+        0.9858223423536004
+      ],
+      "upm": 0.22662311147407102,
+      "median_tokens_per_sec": 32.52,
+      "timeouts": 1,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.8888888888888888,
+        "bug-fix": 1.0,
+        "terminal-ops": 1.0,
+        "feature-add": 1.0,
+        "terse-prompt": 1.0,
+        "refactor": 1.0,
+        "test-writing": 0.6666666666666666,
+        "multi-file": 1.0,
+        "long-context": 1.0
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        }
+      }
+    },
+    "gemma4:31b-it-q8_0": {
+      "overall": 0.9194444444444444,
+      "pooled": [
+        35,
+        39
+      ],
+      "pooled_ci": [
+        0.7642084129775517,
+        0.9593873444171301
+      ],
+      "upm": 0.06909713082390102,
+      "median_tokens_per_sec": 7.17,
+      "timeouts": 1,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.7777777777777777,
+        "bug-fix": 1.0,
+        "terminal-ops": 1.0,
+        "feature-add": 1.0,
+        "terse-prompt": 0.8333333333333333,
+        "refactor": 1.0,
+        "test-writing": 0.6666666666666666,
+        "multi-file": 1.0,
+        "long-context": 1.0
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        }
+      }
+    },
+    "gpt-oss:120b": {
+      "overall": 0.8055555555555556,
+      "pooled": [
+        30,
+        39
+      ],
+      "pooled_ci": [
+        0.6166343954261704,
+        0.8735433757121625
+      ],
+      "upm": 0.17203478925738316,
+      "median_tokens_per_sec": 34.62,
+      "timeouts": 0,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.5555555555555555,
+        "bug-fix": 0.8333333333333333,
+        "terminal-ops": 1.0,
+        "feature-add": 1.0,
+        "terse-prompt": 0.8333333333333333,
+        "refactor": 0.6666666666666666,
+        "test-writing": 0.6666666666666666,
+        "multi-file": 0.6666666666666666,
+        "long-context": 1.0
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        }
+      }
+    },
+    "gemma4:31b": {
+      "overall": 0.7472222222222222,
+      "pooled": [
+        28,
+        39
+      ],
+      "pooled_ci": [
+        0.5622438267752261,
+        0.8345667498605671
+      ],
+      "upm": 0.047852341346701605,
+      "median_tokens_per_sec": 8.96,
+      "timeouts": 8,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.5555555555555555,
+        "bug-fix": 1.0,
+        "terminal-ops": 0.6666666666666666,
+        "feature-add": 1.0,
+        "terse-prompt": 0.8333333333333333,
+        "refactor": 1.0,
+        "test-writing": 0.3333333333333333,
+        "multi-file": 0.3333333333333333,
+        "long-context": 0.6666666666666666
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        }
+      }
+    },
+    "gemma4:26b": {
+      "overall": 0.6472222222222223,
+      "pooled": [
+        24,
+        39
+      ],
+      "pooled_ci": [
+        0.45898781310078474,
+        0.7510883745299295
+      ],
+      "upm": 0.1574114560559685,
+      "median_tokens_per_sec": 30.06,
+      "timeouts": 1,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.5555555555555555,
+        "bug-fix": 0.5,
+        "terminal-ops": 0.6666666666666666,
+        "feature-add": 1.0,
+        "terse-prompt": 1.0,
+        "refactor": 0.6666666666666666,
+        "test-writing": 0.0,
+        "multi-file": 0.6666666666666666,
+        "long-context": 0.3333333333333333
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        }
+      }
+    },
+    "glm-4.7-flash": {
+      "overall": 0.6027777777777777,
+      "pooled": [
+        21,
+        39
+      ],
+      "pooled_ci": [
+        0.3856918682173881,
+        0.6843335276595165
+      ],
+      "upm": 0.05414697034808767,
+      "median_tokens_per_sec": 25.06,
+      "timeouts": 7,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.1111111111111111,
+        "bug-fix": 0.16666666666666666,
+        "terminal-ops": 1.0,
+        "feature-add": 0.3333333333333333,
+        "terse-prompt": 1.0,
+        "refactor": 1.0,
+        "test-writing": 0.6666666666666666,
+        "multi-file": 0.6666666666666666,
+        "long-context": 0.6666666666666666
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        }
+      }
+    },
+    "qwen3-coder:30b": {
+      "overall": 0.5222222222222221,
+      "pooled": [
+        20,
+        39
+      ],
+      "pooled_ci": [
+        0.3619910864569657,
+        0.661350712168669
+      ],
+      "upm": 0.2156721782890007,
+      "median_tokens_per_sec": 29.89,
+      "timeouts": 0,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.5555555555555555,
+        "bug-fix": 0.5,
+        "terminal-ops": 0.0,
+        "feature-add": 0.6666666666666666,
+        "terse-prompt": 0.8333333333333333,
+        "refactor": 0.6666666666666666,
+        "test-writing": 0.6666666666666666,
+        "multi-file": 0.3333333333333333,
+        "long-context": 0.0
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        }
+      }
+    },
+    "gpt-oss:20b": {
+      "overall": 0.5111111111111111,
+      "pooled": [
+        22,
+        39
+      ],
+      "pooled_ci": [
+        0.40975423474522105,
+        0.7069547583829534
+      ],
+      "upm": 0.19394651777843078,
+      "median_tokens_per_sec": 51.07,
+      "timeouts": 0,
+      "median_turns": 1,
+      "categories": {
+        "polyglot": 0.4444444444444444,
+        "bug-fix": 1.0,
+        "terminal-ops": 1.0,
+        "feature-add": 0.0,
+        "terse-prompt": 0.6666666666666666,
+        "refactor": 0.3333333333333333,
+        "test-writing": 0.3333333333333333,
+        "multi-file": 0.0,
+        "long-context": 1.0
+      },
+      "tasks": {
+        "cs-11-anchor-quartzlane": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "node-14-async-bugfix-streamgate": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "ops-08-pipeline-mend": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-02-feature-meterlog": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "py-04-refactor-portwarden": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "py-05-tests-mutkill": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "py-06-medium-repo-ordersloop": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        },
+        "py-07-longctx-grainstore": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "py-13-terse-feature": {
+          "passes": 2,
+          "trials": 3,
+          "ci": [
+            0.2076549551264879,
+            0.9385096847238394
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 3,
+          "trials": 3,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ]
+        },
+        "swift-10-anchor-quartzlane": {
+          "passes": 1,
+          "trials": 3,
+          "ci": [
+            0.0614903152761605,
+            0.7923450448735121
+          ]
+        },
+        "ts-09-anchor-quartzlane": {
+          "passes": 0,
+          "trials": 3,
+          "ci": [
+            0.0,
+            0.5615060804490177
+          ]
+        }
+      }
+    },
+    "gemma4:e4b": {
+      "overall": 0.0,
+      "pooled": [
+        0,
+        6
+      ],
+      "pooled_ci": [
+        0.0,
+        0.3903430336530645
+      ],
+      "upm": 0.0,
+      "median_tokens_per_sec": 59.69,
+      "timeouts": 0,
+      "median_turns": 1,
+      "categories": {
+        "terminal-ops": 0.0,
+        "terse-prompt": 0.0,
+        "bug-fix": 0.0
+      },
+      "tasks": {
+        "ops-08-pipeline-mend": {
+          "passes": 0,
+          "trials": 2,
+          "ci": [
+            0.0,
+            0.6576280471103807
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 0,
+          "trials": 2,
+          "ci": [
+            0.0,
+            0.6576280471103807
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 0,
+          "trials": 2,
+          "ci": [
+            0.0,
+            0.6576280471103807
+          ]
+        }
+      }
+    },
+    "nemotron-3-nano:4b": {
+      "overall": 0.0,
+      "pooled": [
+        0,
+        6
+      ],
+      "pooled_ci": [
+        0.0,
+        0.3903430336530645
+      ],
+      "upm": 0.0,
+      "median_tokens_per_sec": 35.08,
+      "timeouts": 0,
+      "median_turns": 1,
+      "categories": {
+        "terminal-ops": 0.0,
+        "terse-prompt": 0.0,
+        "bug-fix": 0.0
+      },
+      "tasks": {
+        "ops-08-pipeline-mend": {
+          "passes": 0,
+          "trials": 2,
+          "ci": [
+            0.0,
+            0.6576280471103807
+          ]
+        },
+        "py-03-terse-stacktrace": {
+          "passes": 0,
+          "trials": 2,
+          "ci": [
+            0.0,
+            0.6576280471103807
+          ]
+        },
+        "swe-eval-01": {
+          "passes": 0,
+          "trials": 2,
+          "ci": [
+            0.0,
+            0.6576280471103807
+          ]
+        }
+      }
+    }
+  }
+}

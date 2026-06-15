@@ -1,0 +1,102 @@
+{
+  "cs-11-anchor-quartzlane": {
+    "audit_allow": [
+      ".dotnet/dotnet"
+    ],
+    "category": "polyglot",
+    "expected_checks": 15,
+    "grade_kind": "dotnet-assert",
+    "language": "csharp"
+  },
+  "kt-12-anchor-quartzlane": {
+    "audit_allow": [],
+    "category": "polyglot",
+    "expected_checks": 13,
+    "grade_kind": "kotlin-assert",
+    "language": "kotlin"
+  },
+  "node-14-async-bugfix-streamgate": {
+    "audit_allow": [],
+    "category": "bug-fix",
+    "expected_checks": 19,
+    "grade_kind": "node-test",
+    "language": "javascript"
+  },
+  "ops-08-pipeline-mend": {
+    "audit_allow": [],
+    "category": "terminal-ops",
+    "expected_checks": 9,
+    "grade_kind": "artifact-check",
+    "language": "shell"
+  },
+  "py-02-feature-meterlog": {
+    "audit_allow": [],
+    "category": "feature-add",
+    "expected_checks": 15,
+    "grade_kind": "python-unittest",
+    "language": "python"
+  },
+  "py-03-terse-stacktrace": {
+    "audit_allow": [],
+    "category": "terse-prompt",
+    "expected_checks": 9,
+    "grade_kind": "python-unittest",
+    "language": "python"
+  },
+  "py-04-refactor-portwarden": {
+    "audit_allow": [],
+    "category": "refactor",
+    "expected_checks": 16,
+    "grade_kind": "python-unittest",
+    "language": "python"
+  },
+  "py-05-tests-mutkill": {
+    "audit_allow": [],
+    "category": "test-writing",
+    "expected_checks": 9,
+    "grade_kind": "mutation-kill",
+    "language": "python"
+  },
+  "py-06-medium-repo-ordersloop": {
+    "audit_allow": [],
+    "category": "multi-file",
+    "expected_checks": 18,
+    "grade_kind": "python-unittest",
+    "language": "python"
+  },
+  "py-07-longctx-grainstore": {
+    "audit_allow": [],
+    "category": "long-context",
+    "expected_checks": 7,
+    "grade_kind": "python-unittest",
+    "language": "python"
+  },
+  "py-13-terse-feature": {
+    "audit_allow": [],
+    "category": "terse-prompt",
+    "expected_checks": 10,
+    "grade_kind": "python-unittest",
+    "language": "python"
+  },
+  "swe-eval-01": {
+    "audit_allow": [],
+    "category": "bug-fix",
+    "expected_checks": 14,
+    "grade_kind": "python-unittest",
+    "language": "python"
+  },
+  "swift-10-anchor-quartzlane": {
+    "audit_allow": [],
+    "category": "polyglot",
+    "expected_checks": 20,
+    "grade_kind": "swift-assert",
+    "language": "swift"
+  },
+  "ts-09-anchor-quartzlane": {
+    "audit_allow": [],
+    "category": "polyglot",
+    "expected_checks": 16,
+    "grade_kind": "node-test",
+    "language": "typescript"
+  }
+}

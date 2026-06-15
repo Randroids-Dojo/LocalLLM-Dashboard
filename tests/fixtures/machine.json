@@ -1,0 +1,16 @@
+{
+  "chip": "Apple M4 Max",
+  "cpu_cores": 16,
+  "id": "macbook-pro-mac16-5-apple-m4-max-16c-128gb",
+  "memory_gb": 128,
+  "model_identifier": "Mac16,5",
+  "model_name": "MacBook Pro",
+  "schema": 1,
+  "sensitive_fields_excluded": [
+    "serial_number",
+    "hardware_uuid",
+    "provisioning_udid",
+    "host_name",
+    "user_name"
+  ]
+}

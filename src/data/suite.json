@@ -1,0 +1,29 @@
+{
+  "models": [
+    "qwen3-coder-next:latest",
+    "gpt-oss:120b",
+    "gpt-oss:20b",
+    "glm-4.7-flash",
+    "qwen3.6:35b-a3b",
+    "qwen3-coder:30b",
+    "gemma4:31b-it-q8_0",
+    "gemma4:31b",
+    "gemma4:26b",
+    "gemma4:e4b",
+    "nemotron-3-nano:4b"
+  ],
+  "repeats": 3,
+  "gate_rule": "any_pass",
+  "category_weights": {
+    "bug-fix": 0.15,
+    "feature-add": 0.15,
+    "terse-prompt": 0.15,
+    "refactor": 0.10,
+    "test-writing": 0.10,
+    "multi-file": 0.10,
+    "terminal-ops": 0.10,
+    "polyglot": 0.10,
+    "long-context": 0.05
+  },
+  "codex_args": {}
+}

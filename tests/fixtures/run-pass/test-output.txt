@@ -1,0 +1,22 @@
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.39
+CHECK decay_math_at_ticks PASS
+CHECK floor_clamp_boundary PASS
+CHECK peek_highest_effective_wins PASS
+CHECK peek_repeat_stable_no_removal PASS
+CHECK pop_selects_like_peek_and_removes PASS
+CHECK tiebreak_earliest_enqueued_wins PASS
+CHECK tiebreak_name_on_full_tie PASS
+CHECK boost_resets_decay_clock PASS
+CHECK boost_changes_ranking PASS
+CHECK duplicate_enqueue_typed_error PASS
+CHECK boost_unknown_typed_error PASS
+CHECK effective_unknown_typed_error PASS
+CHECK error_type_hierarchy PASS
+CHECK empty_lane_peek_pop_null PASS
+CHECK size_and_names_ascending PASS
+GRADE_SUMMARY total=15 passed=15 failed=0 errored=0
