@@ -56,12 +56,12 @@ export default function PrivacyPage() {
         them here, but copies others have already made cannot be recalled.
       </p>
 
-      <h2>Re-validation &amp; moderation</h2>
+      <h2>Evidence audit &amp; moderation</h2>
       <p>
-        Every submission is re-validated server-side from its raw evidence, rate-limited, and checked
-        for plausibility. Implausible results are flagged; administrators can revoke abusive or fake
-        results. This keeps honest data clean — it is not, and cannot be, proof of hardware
-        provenance.
+        Every submission includes raw run evidence. The server re-audits that evidence, recomputes
+        pass rates, rate-limits submissions, and checks for plausibility. Implausible results are
+        flagged; administrators can revoke abusive or fake results. This keeps honest data clean —
+        it is not, and cannot be, proof of hardware provenance.
       </p>
     </article>
   )

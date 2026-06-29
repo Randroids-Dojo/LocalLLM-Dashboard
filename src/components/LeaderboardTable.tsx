@@ -1,7 +1,52 @@
 import Link from 'next/link'
+import type { ReactNode } from 'react'
 import type { Leaderboard } from '@/lib/types'
 import { pct, num } from '@/lib/types'
 import { WilsonBar } from './WilsonBar'
+
+const COLUMN_HELP = {
+  rank: 'Rank in this filtered leaderboard. Models are sorted by overall score, then confidence-bound and speed tie-breakers.',
+  model: 'Ollama model tag submitted with the benchmark runs. Click a model to view model-level details.',
+  overall:
+    'Headline score: weighted mean of category pass rates. The bar shows the estimate plus its Wilson 95% confidence interval, an uncertainty range based on the observed pass/fail sample.',
+  pooled:
+    'Total passing runs divided by total published runs for this model in the current leaderboard filter.',
+  upm:
+    'Passes per agent-minute. This is a speed view: successful runs per minute of measured agent time. It is not part of the headline score.',
+  tokens:
+    'Median generated tokens per second across runs where token usage data is available.',
+  timeouts: 'Number of published runs that hit the task timeout.',
+}
+
+const CATEGORY_HELP: Record<string, string> = {
+  'bug-fix': 'Tasks that require diagnosing and fixing existing broken behavior.',
+  'feature-add': 'Tasks that require adding new behavior while preserving existing behavior.',
+  'long-context': 'Tasks that require using a larger context or scattered information to solve correctly.',
+  'multi-file': 'Tasks that require coordinating changes across multiple files or modules.',
+  polyglot: 'Language anchor tasks across non-Python stacks such as C#, Kotlin, Swift, TypeScript, or Node.',
+  refactor: 'Tasks that require restructuring code while preserving behavior.',
+  'terminal-ops': 'Tasks focused on shell, file, or pipeline operations.',
+  'terse-prompt': 'Tasks with intentionally brief prompts, measuring how well the model infers the needed change.',
+  'test-writing': 'Tasks that require writing tests strong enough to catch regressions or mutants.',
+}
+
+function HeaderCell({
+  children,
+  title,
+  className = 'px-3 py-2',
+}: {
+  children: ReactNode
+  title: string
+  className?: string
+}) {
+  return (
+    <th className={className} title={title} aria-label={`${String(children)}: ${title}`} scope="col">
+      <span className="cursor-help decoration-dotted underline-offset-4 hover:text-neutral-300">
+        {children}
+      </span>
+    </th>
+  )
+}
 
 export function LeaderboardTable({ lb }: { lb: Leaderboard }) {
   const categories = Array.from(
@@ -21,17 +66,21 @@ export function LeaderboardTable({ lb }: { lb: Leaderboard }) {
       <table className="w-full border-collapse text-sm">
         <thead>
           <tr className="bg-neutral-900/60 text-left text-xs uppercase tracking-wide text-neutral-500">
-            <th className="px-3 py-2">#</th>
-            <th className="px-3 py-2">Model</th>
-            <th className="px-3 py-2">Overall (Wilson 95%)</th>
-            <th className="px-3 py-2">Pooled</th>
-            <th className="px-3 py-2">UPM</th>
-            <th className="px-3 py-2">tok/s</th>
-            <th className="px-3 py-2">TO</th>
+            <HeaderCell title={COLUMN_HELP.rank}>#</HeaderCell>
+            <HeaderCell title={COLUMN_HELP.model}>Model</HeaderCell>
+            <HeaderCell title={COLUMN_HELP.overall}>Overall (Wilson 95%)</HeaderCell>
+            <HeaderCell title={COLUMN_HELP.pooled}>Pooled</HeaderCell>
+            <HeaderCell title={COLUMN_HELP.upm}>UPM</HeaderCell>
+            <HeaderCell title={COLUMN_HELP.tokens}>tok/s</HeaderCell>
+            <HeaderCell title={COLUMN_HELP.timeouts}>TO</HeaderCell>
             {categories.map((c) => (
-              <th key={c} className="px-2 py-2 font-medium">
+              <HeaderCell
+                key={c}
+                className="px-2 py-2 font-medium"
+                title={CATEGORY_HELP[c] ?? `Pass rate for the ${c} benchmark category.`}
+              >
                 {c}
-              </th>
+              </HeaderCell>
             ))}
           </tr>
         </thead>

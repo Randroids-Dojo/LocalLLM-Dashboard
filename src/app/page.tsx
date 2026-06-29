@@ -26,7 +26,7 @@ export default async function Home({
       <div>
         <h1 className="text-xl font-semibold">Local coding-model leaderboard</h1>
         <p className="mt-1 text-sm text-neutral-400">
-          Pass rates re-validated server-side from each run&apos;s event log. Filter to a hardware
+          Pass rates are recomputed server-side from submitted run evidence. Filter to a hardware
           class to compare models on machines like yours.
         </p>
       </div>
