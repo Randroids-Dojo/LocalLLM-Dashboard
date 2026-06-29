@@ -30,8 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </div>
         </header>
-        <main className="mx-auto max-w-6xl px-4 py-6">{children}</main>
-        <footer className="mx-auto max-w-6xl px-4 py-10 text-xs text-neutral-600">
+        <main className="mx-auto w-full max-w-[calc(100vw-2rem)] px-4 py-6">{children}</main>
+        <footer className="mx-auto w-full max-w-[calc(100vw-2rem)] px-4 py-10 text-xs text-neutral-600">
           Results are community-submitted; the server re-audits submitted evidence and recomputes
           pass rates. Aggregates use pooled Wilson 95% intervals. Publishing is opt-in.{' '}
           <Link href="/privacy" className="underline">Privacy &amp; removal</Link>.
